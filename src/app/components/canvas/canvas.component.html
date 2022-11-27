@@ -1,0 +1,22 @@
+<svg 
+    class="canvas" 
+    #canvas
+    >
+    <rect
+        class="rectangle"
+        [attr.x]="rectangle?.x"
+        [attr.y]="rectangle?.y"
+        [attr.width]="rectangle?.width"
+        [attr.height]="rectangle?.height"
+        fill="white"
+        stroke="black"
+        stroke-opacity="0.5" 
+        >
+    </rect>
+    <text 
+        [attr.x]="rectangle?.x"
+        [attr.y]="rectangle?.y"
+        >
+        {{ perimeter }}
+    </text>
+</svg>
